@@ -1,8 +1,65 @@
+/* CSS Reset code */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Custom CSS styling for google homepage*/
+body {
+  min-width: 960px;
+  font-family: arial, sans-serif;
+}
+
+.wrapper {
+  position: static;
+}
+
 .container {
   position: relative;
   width: 100%;
   height: 100%;
-  min-width: 500px;
 }
 
 img.google {
@@ -13,9 +70,9 @@ img.google {
 
 p.country {
   position: absolute;
-  bottom: -20%;
+  bottom: 0;
   right: 50%;
-  margin-right: -156px;
+  margin-right: -150px;
 }
 
 input {
@@ -47,15 +104,18 @@ input {
 }
 
 p.suggestion {
+  font-size: 14px;
   text-align: center;
-  line-height: 260px;
+  line-height: 295px;
 }
 
 .top-menu {
-  font-size: 13px;
+  font-size: 14px;
   position: absolute;
   top: 0;
-  right: 0;
+  height: 40px;
+  width: 100%;
+  min-width: 960px;
 }
 
 .top-menu a {
@@ -63,8 +123,13 @@ p.suggestion {
   color: #000;
 }
 
-ul {
-  display: inline-block;
+.top-menu ul {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 li {
@@ -74,6 +139,45 @@ li {
   padding-right: 4px;
 }
 
+li:hover {
+  text-decoration: underline;
+}
+
 .log-in {
   margin-right: 20px
+}
+
+.footer {
+  font-size: 14px;
+  background-color: #f2f2f2;
+  color: #666;
+  border-top: 1px solid #e4e4e4;
+  position: absolute;
+  bottom: 0;
+  height: 45px;
+  width: 100%;
+  min-width: 960px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #666;
+}
+
+.right_block {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.left_block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }

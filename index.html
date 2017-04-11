@@ -6,37 +6,41 @@
   <title>Google</title>
 </head>
 <body>
-  <div class="container">
-    <img class="google" src="images/google_logo.png" alt="Google">
-    <p class="country">
-      <a href="https://en.wikipedia.org/wiki/Belarus">Беларусь</a>
+  <div class="wrapper">
+    <div class="container">
+      <img class="google" src="images/google_logo.png" alt="Google">
+      <p class="country">
+        <a href="https://en.wikipedia.org/wiki/Belarus">Беларусь</a>
+      </p>
+      <form action="#" method="GET" name="seach_form">
+        <input type="text" name="search_box">
+        <button class="search" type="submit">Поиск в Google</button>
+        <button class="luck" type="button">Мне повезёт!</button>
+      </form>
+    </div>
+    <p class="suggestion">
+      Google.by предлагается на: <a href="#">Беларуская</a>
     </p>
-    <form action="#" method="GET" name="seach_form">
-      <input type="text" name="search_box">
-      <button class="search" type="submit">Поиск в Google</button>
-      <button class="luck" type="button">Мне повезёт!</button>
-    </form>
-  </div>
-  <p class="suggestion">
-    Google.by предлагается на: <a href="#">Беларуская</a>
-  </p>
-  <ul class="top-menu">
-    <li><a href="#">Почта</a></li>
-    <li><a href="#">Картинки</a></li>
-    <li><img class="cubes" src="images/cubes.png"></li>
-    <li><button class="log-in" type="button">Войти</button></li>
-  </ul>
-  <div class="footer">
-    <ul>
-      <li>Реклама</li>
-      <li>Для бизнеса</li>
-      <li>Всё о Google</li>
-    </ul>
-    <ul>
-      <li>Конфиденциальность</li>
-      <li>Условия</li>
-      <li>Настройки</li>
-    </ul>
+    <div class="top-menu">
+      <ul>
+        <li><a href="#">Почта</a></li>
+        <li><a href="#">Картинки</a></li>
+        <li><a href="#"><img class="cubes" src="images/cubes.png" alt="cubes"></a></li>
+        <li><button class="log-in" type="button">Войти</button></li>
+      </ul>
+    </div>
+    <div class="footer">
+      <ul class="left_block">
+        <li><a href="#">Реклама</a></li>
+        <li><a href="#">Для бизнеса</a></li>
+        <li><a href="#">Всё о Google</a></li>
+      </ul>
+      <ul class="right_block">
+        <li><a href="#">Конфиденциальность</a></li>
+        <li><a href="#">Условия</a></li>
+        <li><a href="#">Настройки</a></li>
+      </ul>
+    </div>
   </div>
 </body>
 </html>
